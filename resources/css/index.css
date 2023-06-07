@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 40%;
+    height: auto;
+    background-image: url('https://images.unsplash.com/photo-1615800098746-73af8261e3df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80');
+    background-repeat: repeat-y;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+main .menu {
+    max-width: 100%;
+    min-width: 30%;
+    height: auto; 
+    margin: 0 auto;
+}
+
+.left {
+    width: 50%;
+    min-width: 30%;
+    height: auto;
+    float: left;
+    padding: 0 25px;
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-right: 2px solid rgb(234, 230, 230);
+}
+
+.right {
+    width: 50%;
+    min-width: 30%;
+    height: auto;
+    float: right;
+    padding-right: 25px;
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.left .title {
+    width: 100%;
+    min-width: 20%;
+    min-height: 20%;
+    height: 30%;
+    border-bottom: 2px solid rgb(234, 230, 230);
+}
+
+.title h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 8em;
+    font-weight: 1000;
+    line-height: 0.9em;
+    vertical-align: middle;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    word-wrap: break-word;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    margin: 6px 0;
+    border-bottom: 2px solid rgb(234, 230, 230);
+    font-weight: 800;
+}
+
+.main_course {
+    border-bottom: 2px solid rgb(231, 234, 230);
+}
+
+.item p{
+    display: inline-block;
+    margin-top: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.left_side {
+    width: 90%;
+    text-align: left;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.right_side {
+    width: 10%;
+    text-align: right;
+    font-weight: 600;
+}
+
+.details{
+    font-size: 0.65em;
+    width: 90%;
+    word-wrap: break-word;
+}
+
+.item:last-child .details:last-child {
+    margin-bottom: 20px;
+}
+
+.appetizer {
+    padding-left: 25px;
+}
+
+.appetizer h2 {
+    margin-top: 20px;
+    border-top: 2px solid rgb(234, 230, 230);
+}
+
+.appetizer .item:last-child .details:last-child {
+    margin-bottom: unset;
+}
+
+.chef {
+    margin: 10px 0px;
+    background:rgb(0, 0, 0);
+    color: white;
+    padding-left: 25px;
+    border-bottom: unset;
+}
+
+.chef_specials {
+    padding-left: 25px;
+    
+}
+
+.chef_details {
+    font-size: 0.7em;
+    padding: 0 0px 15px; 
+    text-align: justify; 
+}
+
+.chef_specials .item:last-child .details:last-child {
+    margin-bottom: unset;
+}
+
+.drinks {
+    padding-left: 25px;
+    width: 100%;
+    height: 13vh;
+    border-top: 2px solid rgb(234, 230, 230);
+}
+
+.left_drink{
+    width: 45%;
+    height: 8vh;
+    float: left;
+    border-right:2px solid rgb(234, 230, 230);
+}
+
+.right_drink{
+    width: 45%;
+    height: 15%;
+    float: right;
+}
+
+.left_drink p, .right_drink p{
+    display: inline-block;
+}
+
+.left_d {
+    width: 65%;
+    text-align: left;
+}
+
+.right_d {
+    width: 20%;
+    text-align: right;
+    margin-left: 10px;
+    margin-right: 2px;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 0 25px 15px 0;
+    border-top: 2px solid rgb(234, 230, 230);
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    font-weight: 300;
+    padding-top: 10px;
+    padding-left: 25px;
+    width: 30%;
+    text-align: left;
+
+}
+
+address, .link {
+   padding: 10px 0 0 10px;
+    width: 35%;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 3000px){
+    main{
+        margin: 60px auto;
+    }
+
+    .menu h1{
+        font-size: 9.5em;
+    }
+    .left {
+        height: auto;
+    }
+    .drinks, .left_drink, .right_drink {
+        height: 6vh;
+    }
+
+}
+
+@media only screen and (max-width: 1025px) {
+    main{
+        width: 60%;
+        height: auto;
+    }
+    .left {
+        height: auto;
+    }
+    .drinks, .left_drink, .right_drink {
+        height: 6vh;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    main{
+        width: 70%;
+        height: auto;
+    }
+    .left {
+        height: auto;
+    }
+    .drinks, .left_drink, .right_drink {
+        height: 6vh;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    main{
+        width: 80%;
+        height: auto;
+    }
+
+    .menu h1{
+        font-size: 3.5em;
+    }
+
+    .menu h2{
+        font-size: 1.2em;
+    }
+
+    .left {
+        height: auto;
+        padding-bottom: 280px;
+    }
+
+    .right {
+        height: auto;
+    }
+
+    .drinks, .left_drink, .right_drink {
+        height: 14vh;
+    }
+}
+
+
+
+
+
+
