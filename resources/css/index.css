@@ -218,7 +218,12 @@ address, .link {
     .drinks, .left_drink, .right_drink {
         height: 6vh;
     }
+}
 
+@media only screen and (min-width: 1026px) and (max-width: 1449px) {
+    main{
+        width: 50%;
+    }
 }
 
 @media only screen and (max-width: 1025px) {
